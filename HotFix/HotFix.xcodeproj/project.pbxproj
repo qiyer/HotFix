@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012597CB205FCB2400CE8CCB /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 012597CA205FCB2400CE8CCB /* demo.js */; };
+		012597CE205FCB9800CE8CCB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012597CD205FCB9700CE8CCB /* JavaScriptCore.framework */; };
+		012597D52062123A00CE8CCB /* HotFixManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 012597D42062123A00CE8CCB /* HotFixManager.m */; };
+		012597E82069057100CE8CCB /* HotFix.js in Resources */ = {isa = PBXBuildFile; fileRef = 012597E72069057000CE8CCB /* HotFix.js */; };
 		01293732205BA5BA00480A0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01293731205BA5BA00480A0A /* main.m */; };
 		01293735205BA5BA00480A0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01293734205BA5BA00480A0A /* AppDelegate.m */; };
 		01293738205BA5BA00480A0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01293737205BA5BA00480A0A /* ViewController.m */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012597CA205FCB2400CE8CCB /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		012597CD205FCB9700CE8CCB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		012597D32062123A00CE8CCB /* HotFixManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotFixManager.h; sourceTree = "<group>"; };
+		012597D42062123A00CE8CCB /* HotFixManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotFixManager.m; sourceTree = "<group>"; };
+		012597E72069057000CE8CCB /* HotFix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = HotFix.js; sourceTree = "<group>"; };
 		0129372D205BA5BA00480A0A /* HotFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01293731205BA5BA00480A0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01293733205BA5BA00480A0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012597CE205FCB9800CE8CCB /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012597CC205FCB9700CE8CCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012597CD205FCB9700CE8CCB /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		012597D22062122000CE8CCB /* HotFixCore */ = {
+			isa = PBXGroup;
+			children = (
+				012597E72069057000CE8CCB /* HotFix.js */,
+				012597D32062123A00CE8CCB /* HotFixManager.h */,
+				012597D42062123A00CE8CCB /* HotFixManager.m */,
+			);
+			path = HotFixCore;
+			sourceTree = "<group>";
+		};
 		01293724205BA5BA00480A0A = {
 			isa = PBXGroup;
 			children = (
 				0129372F205BA5BA00480A0A /* HotFix */,
 				0129372E205BA5BA00480A0A /* Products */,
+				012597CC205FCB9700CE8CCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +85,8 @@
 		0129372F205BA5BA00480A0A /* HotFix */ = {
 			isa = PBXGroup;
 			children = (
+				012597D22062122000CE8CCB /* HotFixCore */,
+				012597CA205FCB2400CE8CCB /* demo.js */,
 				01293733205BA5BA00480A0A /* AppDelegate.h */,
 				01293734205BA5BA00480A0A /* AppDelegate.m */,
 				01293736205BA5BA00480A0A /* ViewController.h */,
@@ -135,7 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012597CB205FCB2400CE8CCB /* demo.js in Resources */,
 				01293740205BA5BA00480A0A /* LaunchScreen.storyboard in Resources */,
+				012597E82069057100CE8CCB /* HotFix.js in Resources */,
 				0129373D205BA5BA00480A0A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +183,7 @@
 				01293738205BA5BA00480A0A /* ViewController.m in Sources */,
 				01293735205BA5BA00480A0A /* AppDelegate.m in Sources */,
 				01293732205BA5BA00480A0A /* main.m in Sources */,
+				012597D52062123A00CE8CCB /* HotFixManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
